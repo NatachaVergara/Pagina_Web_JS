@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&family=Montserrat:wght@200&display=swap"
+        rel="stylesheet">
+    <!--animate css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--Css propio-->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/fondoNegro.css">
+    <title>Pequeños proyectos de JS</title>
+
+</head>
+
+<body>
+    <!--Comienzo del Nav-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark ">
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand ms-2 " href="#">
+                JS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 d-flex justify-content-end" style="width:100%">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Pequeños Proyectos</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#proyecto1">Proyecto 1</a></li>
+                            <li><a class="dropdown-item" href="#proyecto2">Proyecto 2</a></li>
+                            <li><a class="dropdown-item" href="#proyecto3">Proyecto 3</a></li>
+                            <li><a class="dropdown-item" href="#proyecto4">Proyecto 4</a></li>
+                            <li><a class="dropdown-item" href="./jubilaciones.html">jubilaciones</a></li>
+                            <li><a class="dropdown-item" href="./piedraPapelTijera.html">Piedra-Papel-Tijera</a></li>
+                            <li><a class="dropdown-item" href="https://superheroesymiprimeraapi.netlify.app">Mi primera API</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Fin del Nav-->
+
+
+    <!--Ejercicio 3 Sistema de facturacion-->
+
+    <section id="proyecto1">
+        <div class="facturacion">
+            <h1>Proyecto 1: Facturación</h1>
+            <div>
+                <div>
+                    <label for="precio">Ingrese el precio del producto</label> <br>
+                    <input type="tex" name="precio" id="precio" required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="medioDePago">Ingrese en el campo de abajo una de las siguientes opciones y verá el monto
+                        final con el descuento ya aplicado:
+                        <br>
+                        <ul>
+                            <li>E: Si es pago en efectivo</li>
+                            <li>D: Si es pago con tarjeta de débito</li>
+                            <li>C: Si es pago con tarjeta de crédito</li>
+                        </ul>
+                    </label> <br>
+                    <input type="text" name="medioDePago" id="medioDePago" required>
+                </div>
+                <div class="btn">
+                    <button onclick="facturacion()">Calcular</button>
+                    <!-- <button onclick="borrar()">Borrar</button>-->
+                </div>
+                <p id="montoFinal">Ingrese la información en los campos de arriba y vera aquí el monto a abonar</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Comienzo del juego del dado-->
+    <section id="proyecto2">
+        <div class="lanzamientoDado">
+            <h1>Proyecto 2: Lanzamiento de dado</h1>
+            <div>
+                <!--Creo el boton que va a funcionar con el js-->
+
+                <button class="boton" onclick="tirarDados()">Tira el dado</button>
+                <!--Creo un parrafo para mostrar el numero que me da cada vez que hago click en button-->
+            </div>
+            <p id="demo"></p>
+        </div>
+    </section>
+
+
+    <!-- Comienzo del Contador de clicks-->
+    <section id="proyecto3">
+        <div class="contadorClick">
+            <h1>Proyecto 3: Contador de click</h1>
+            <div>
+                <!--Paso1: Creo un boton que va a funcionar con el js-->
+
+                <button onclick="contadorDeClick()">Clickeame</button>
+                <p id="demo2"></p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Comienzo de Cambiar color al boton-->
+    <!-- <section id="proyecto4"> -->
+    <!-- <h1 id="h1"> Proyecto 4: Manipulación del DOM</h1>
+
+        <h2>Paso 1: Obtener un elemento</h2>
+
+        <ul>
+            <li>document.querySelector('selector'): <span class="estilo-letras">Es uno de los métodos para obtener un
+                    elemento. Devuelve sólo el primer elemento que coincida con el selector CSS dado</span></li>
+            <li>document.querySelectorAll('selector'): <span class="estilo-letras">Obtiene un grupo de elementos.
+                    Devuelve un array con todos los elementos que coincidan con el selector CSS dado</span></li>
+            <li>document.getElementById(''): <span class="estilo-letras">obtiene un solo elemento unicamente a través de
+                    su ID</span></li>
+        </ul>
+
+        <h2>Paso 2: Manipular el elemento una vez obtenido:</h2>
+
+        <ul>
+            <li>CSS: <span class="estilo-letras">elemento.style.propiedadCss</span></li>
+            <li>HTML: <span class="estilo-letras">elemento.textContent</span></li>
+            <li>HTML: <span class="estilo-letras">elemento.innerHTML</span></li>
+        </ul>
+
+        <h2>Manipulación de DOM a través de un evento - Intro:</h2>
+
+        <p id="primerParrafo">Tambien se puede manipular un elemento a través de un evento. Repasemos antes... Un evento
+            es la interacción del usuario con nuestra página Web. Esta interacción activa una función.</p>
+
+        <p>Uno de los eventos más utilizados es el evento click. La estrucutra sintaxica para un evento es el siguiente
+        </p>
+
+        <p><strong>elemento.addEventListener("evento",funcion a ejecutar)</strong></p> -->
+
+
+    <!-- </section> -->
+
+
+
+
+    <!-- Comienzo de Cambiar color al boton-->
+    <section id="proyecto4">
+        <div class="cambioColor">
+            <h1> Proyecto 4: Manipulando el DOM de un botón a partir de un evento</h1>
+            <!--Paso1: Creo un boton que va a funcionar con el js-->
+            <button id="botonColor" class="mt-3">Modo Nocturno: OFF</button>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!--Comienzo del footer-->
+
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container d-flex justify-content-between">
+            <span>Diseñado por Natacha Vergara &copy; 2021</span>
+
+
+            <a class="text-mute" href="#">Subir</a>
+
+
+        </div>
+
+    </footer>
+
+    <script src="./js/javaScrip.js"></script>
+    <script src="./js/fondoNegro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
