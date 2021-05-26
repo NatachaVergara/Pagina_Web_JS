@@ -1,4 +1,4 @@
-
+ 
 //Proyecto 1
 //let porcentaje = 0;//Creo la variable para despues usarla dentro del switch
 function facturacion(precio, medioDePago) { //Ingreso el precio del producto que voy a realizar el cálculo de descuento 
@@ -82,26 +82,26 @@ function tirarDados(numero) {
   switch (numero) {
     case 1:
       numero = 1;
-      document.getElementById("demo").innerHTML = (`<img src="https://images.vectorhq.com/images/previews/27e/dado-1-138329.png">`);
+      document.getElementById("demo").innerHTML = (`<img class="img" src="https://i.pinimg.com/236x/21/8d/0d/218d0d64ad210eeeb2e0d74fb71b56aa.jpg">`);
       break;
     case 2:
       numero = 2;
-      document.getElementById("demo").innerHTML = (`<img src="https://images.vectorhq.com/images/previews/482/dado-2-138325.png">`);
+      document.getElementById("demo").innerHTML = (`<img class="img" src="https://image.flaticon.com/icons/png/512/0/2.png">`);
       break;
     case 3:
       numero = 3;
-      document.getElementById("demo").innerHTML = (`<img src="https://images.vectorhq.com/images/thumbs/194/dado-3-138321.png">`);
+      document.getElementById("demo").innerHTML = (`<img class="img" src="https://image.freepik.com/iconos-gratis/tres-dados-resultado_318-9261.jpg">`);
       break;
     case 4:
       numero = 4;
-      document.getElementById("demo").innerHTML = (`<img src="https://png.vector.me/files/images/3/2/323088/dado_4_preview">`);
+      document.getElementById("demo").innerHTML = (`<img  class="img" src="https://img.freepik.com/icones-gratis/dado-com-seis-faces_318-9726.jpg?size=338&ext=jpg">`);
       break;
     case 5:
       numero = 5;
-      document.getElementById("demo").innerHTML = (`<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/27019/die_face_5.png">`);
+      document.getElementById("demo").innerHTML = (`<img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlexMQuRxoeYtFU4e8UgLURtQU0d5w6cyLNSqKGrh0yy2w6pqP8xzlw4NuSv3kmlvKD6o&usqp=CAU">`);
       break;
     default:
-      document.getElementById("demo").innerHTML = (`<img src="https://png.vector.me/files/images/3/2/323082/dado_6_preview">`);
+      document.getElementById("demo").innerHTML = (`<img class="img" src="https://img.freepik.com/iconos-gratis/seis-resultado-dados_318-9190.jpg?size=338&ext=jpg">`);
   }//Fin del switch
 
 }//Fin de la funcion

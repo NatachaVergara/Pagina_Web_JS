@@ -1,210 +1,76 @@
-*{margin:0;padding:0; box-sizing: border-box}
-body{
-    display:flex;
-    flex-direction: column; 
-   
-    
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    }
+
+
+    /*Proyecto 4*/
+.fondoNegro{        
+    background-color: black;
+    color: White;        
+    }
+
+input{
+    width: 100px;
+    height: 40px;
+    margin-left: 250px;
+    border-radius:10%;
+}   
+ul{
+    margin-left:200px
+} 
+.primerbtn{
+    width: 100px;
+    margin-left: 250px;
+    border-radius: 10%;
 }
 
-/*Comienzo del nav*/
-.navbar-nav{
-    font-family: 'Montserrat', sans-serif;
-}
-/*Fin del nav*/
+#proyecto1{
+    margin-left: 150px;
+}   
 
-/*Seciones*/
-section{
-    width: 100%;
-    margin: auto;
-    margin-bottom:150px;
-    display:flex;
-    flex-direction:column;
-}
-
-.facturacion{
-    width: 60%;
-    margin:100px 0 50px 250px;
-    border: 10px dotted darkmagenta;
-    border-radius:10px;
-    padding: 80px;
-}
-
-.lanzamientoDado, .contadorClick, #proyecto4, #proyecto5 {
-    width: 60%;
-    margin: 10px 0 50px 250px;
-    border: 10px dotted darkmagenta;
-    border-radius:10px;
-    padding: 80px;    
-}
-
-.btn{
-    display:flex;
-    flex-direction: row;
-}
-
-.facturacion input{
-    margin-top: 10px;
-}
-
-
-.facturacion button{
-    margin: 20px 50px;
-    padding:10px;
-    border-radius: 10px;
-
-}
-
-.lanzamientoDado button, .contadorClick button, #botonColor{
-    padding:10px;
-    border-radius: 10px;
-    margin-left: 110px;
-}
-.lanzamientoDado img{    
+.img{
     width: 200px;
-    margin-top: 10px;
-    margin-left: 70px;
-    padding: 10px;
-}
-#demo2{
-    margin: 20px 140px;
-    font-size: 3rem;
-    
-}
-footer span{
-    color: white;
-}
-/*Cambiar color al boton*/
-#botonColor{
-    background-color:red;
+    border-radius: 10%;
 }
 
 
-.subtilulos{
-color:teal;
-font-size: 2rem;
-font-family: Arial, Helvetica, sans-serif;
-
-
+@media screen and (max-width: 700px)
+{
+.contUno{
+    margin-top: 50px;
 }
 
-@media screen and (max-width: 500px){
-   /*General*/
-    h1{
-        margin-left: 15%;
-        font-size: 1rem;
-    }
-    section{
-        width: 80%;
-    }
+ul{
+    margin-left: 35px;
+}
+input{    
+    margin-left: 100px;       
+} 
 
-    
-    label{
-        font-size: 0.7rem;
-    }
-    .facturacion{
-            width: 100%;
-            margin: 100px 0 0 10px;
-            border: 3px dotted darkmagenta;
-            border-radius:10px;
-            padding: 10px;
-        
-    }
-    .facturacion input{
-        margin-top: 10px;
-        margin-left: 30px;
-        width: 100px;
-    }
-    
-    .facturacion button{
-        margin: 20px 5px;
-        padding:10px;
-        border-radius: 10px;
-       
-    
-    }
-    .btn{
-        flex-direction: column;
-
-    }
-   
-    .lanzamientoDado, .contadorClick, #proyecto4, #proyecto5{
-        width: 100%;
-        margin: 10px 0 0px 10px;
-        border: 3px dotted darkmagenta;
-        border-radius:10px;
-        padding: 10px;    
-    }
-
-    .lanzamientoDado img{
-        margin-left: 50px;
-    }
-
-    #demo2{
-        margin: 20px 130px;
-        font-size: 3rem;
-        
-    }
-
-   
-
+#proyecto1{
+    margin-left: 0px;
+}
+.primerbtn{
+    width: 100px;
+    margin-left:100px;
+    border-radius: 10%;
+}
+.img{
+    margin-left: 30px;
+    border-radius: 10%;
+}
 }
 
 
-@media screen and (min-width: 600px) and (max-width: 760px){
-   
-    h1{
-        margin-left: 25%;
-        margin-bottom: 15px;
-        font-size: 1rem;
-    }
 
-    
-    label{
-        font-size: 0.7rem;
-    }
-    .facturacion{
-            width: 80%;
-            margin: 100px 0 0 50px;
-            border: 3px dotted darkmagenta;
-            border-radius:10px;
-            padding: 10px;
-        
-    }
-    .facturacion input{
-        margin-top: 10px;
-        margin-left: 30px;
-        width: 100px;
-    }
-    
-    .facturacion button{
-        width: 100px;
-        margin: 20px 0 10px 250px;
-        padding:10px;
-        border-radius: 10px;      
-       }
 
-   
-   
-    .lanzamientoDado, .contadorClick,  #proyecto4, #proyecto5{
-        width: 80%;
-        margin: 10px 0 0px 50px;
-        border: 3px dotted darkmagenta;
-        border-radius:10px;
-        padding: 10px;    
-    }
 
-    .lanzamientoDado img{
-        margin-left: 100px;
-    }
-
-    #demo2{
-        margin: 20px 220px;
-        font-size: 3rem;
-        
-    }
-
-    .lanzamientoDado button, .contadorClick button, #proyecto4, #proyecto5{
-        margin-left: 230px;
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
     }
 }
-

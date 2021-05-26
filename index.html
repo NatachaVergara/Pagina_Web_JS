@@ -26,7 +26,7 @@
     <!--animate css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!--Css propio-->
-    <!-- <link rel="stylesheet" href="./css/estilos.css"> -->
+    <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/fondoNegro.css">
         <title>Pequeños proyectos de JS</title>
 
@@ -34,26 +34,6 @@
     <!-- Custom styles for this template -->
     <link href="./css/carousel.css" rel="stylesheet">
 
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-            }
-        .fondoNegro{        
-            background-color: black;
-            color: White;        
-            }
-
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -94,7 +74,7 @@
 
     <main>
 
-        <div id="myCarousel" class="carousel slide " data-bs-ride="carousel">
+        <div id="myCarousel" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -148,11 +128,11 @@
     ================================================== -->
         <!-- Wrap the rest of the page in another container to center all the content. -->
 
-        <div class="container marketing">
+        <div class="container marketing m-sm-5 ">
 
             <!-- 4 columns of text below the carousel -->
-            <div class="row">
-                <div class="col-lg-4">
+            <div class="row ">
+                <div class="col-lg-4 mx-auto contUno">
                     <img class="bd-placeholder-img rounded-circle" width="140" height="140"
                         src="https://cdn.pixabay.com/photo/2019/10/22/13/31/delivery-4568738_960_720.jpg" role="img" aria-label="Placeholder: 140x140"
                         preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -196,7 +176,7 @@
                     <p><a class="btn btn-secondary" href="#proyecto3">VER</a></p>
                 </div><!-- /.col-lg-4 -->
 
-                <div class="col-lg-4">
+                <div class="col-lg-4 mx-auto ">
                     <img class="bd-placeholder-img rounded-circle" width="140" height="140"
                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Q1pnUncn2z3xQzG0X-OperGL_Qoiqopj2Q&usqp=CAU" role="img" aria-label="Placeholder: 140x140"
                         preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -217,7 +197,7 @@
             <div class="row featurette" id="proyecto1">
                 <div class="col-md-7 d-flex ">
                     <div class="col  d-flex flex-column position-static ">
-                        <h2 class="featurette-heading">Proyecto 1: Sistema de facturacion </h2>
+                        <h2 class="featurette-heading text-center">Proyecto 1: Sistema de facturacion</h2>
                         <label for="precio" class="text-primary text-center"><strong>Ingrese el precio del producto</strong></label><br>
                         <input type="tex" name="precio" id="precio"><br>
                         <strong class="d-inline-block mb-2 text-primary">
@@ -231,7 +211,7 @@
                         </ul></label>
                         <input type="text" name="medioDePago" id="medioDePago" required><br>
 
-                        <button class=" btn-primary" onclick="facturacion()">Calcular</button><br>
+                        <button class=" btn-primary primerbtn" onclick="facturacion()">Calcular</button><br>
                         <div class="col-md-5 order-md-1 mx-auto">
                             <p id="montoFinal" class="text-primary text-center">Ingrese la información en los campos de arriba y vera aquí el monto a
                                 abonar
