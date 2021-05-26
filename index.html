@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="spa">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!--Boostrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
 
     <!--Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -23,158 +26,297 @@
     <!--animate css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!--Css propio-->
-    <link rel="stylesheet" href="./css/estilos.css">
+    <!-- <link rel="stylesheet" href="./css/estilos.css"> -->
     <link rel="stylesheet" href="./css/fondoNegro.css">
-    <title>Pequeños proyectos de JS</title>
+        <title>Pequeños proyectos de JS</title>
 
+    
+    <!-- Custom styles for this template -->
+    <link href="./css/carousel.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            }
+        .fondoNegro{        
+            background-color: black;
+            color: White;        
+            }
+
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <!--Comienzo del Nav-->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark ">
-        <div class="container-fluid d-flex justify-content-between">
-            <a class="navbar-brand ms-2 " href="#">
-                JS</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0 d-flex justify-content-end" style="width:100%">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Pequeños Proyectos</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item" href="#proyecto1">Proyecto 1</a></li>
-                            <li><a class="dropdown-item" href="#proyecto2">Proyecto 2</a></li>
-                            <li><a class="dropdown-item" href="#proyecto3">Proyecto 3</a></li>
-                            <li><a class="dropdown-item" href="#proyecto4">Proyecto 4</a></li>
-                            <li><a class="dropdown-item" href="./jubilaciones.html">jubilaciones</a></li>
-                            <li><a class="dropdown-item" href="./piedraPapelTijera.html">Piedra-Papel-Tijera</a></li>
-                            <li><a class="dropdown-item" href="https://superheroesymiprimeraapi.netlify.app">Mi primera API</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!--Fin del Nav-->
 
-
-    <!--Ejercicio 3 Sistema de facturacion-->
-
-    <section id="proyecto1">
-        <div class="facturacion">
-            <h1>Proyecto 1: Facturación</h1>
-            <div>
-                <div>
-                    <label for="precio">Ingrese el precio del producto</label> <br>
-                    <input type="tex" name="precio" id="precio" required>
+    <header>
+        <!--Comienzo del Nav-->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-warning ">
+            <div class="container-fluid d-flex justify-content-between">
+                <a class="navbar-brand ms-2 text-dark" href="#">
+                    JS y Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0 d-flex justify-content-end " style="width:100%">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active text-dark" href="#" id="navbarScrollingDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">Pequeños Proyectos</a>
+                            <ul class="dropdown-menu bg-warning" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="#proyecto1">Proyecto 1</a></li>
+                                <li><a class="dropdown-item" href="#proyecto2">Proyecto 2</a></li>
+                                <li><a class="dropdown-item" href="#proyecto3">Proyecto 3</a></li>
+                                <li><a class="dropdown-item" href="#proyecto4">Proyecto 4</a></li>
+                                <li><a class="dropdown-item" href="./jubilaciones.html">Jubilaciones</a></li>
+                                <li><a class="dropdown-item" href="./piedraPapelTijera.html">Piedra-Papel-Tijera</a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://superheroesymiprimeraapi.netlify.app">Mi
+                                        primera API</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-                <br>
+            </div>
+        </nav>
+        <!--Fin del Nav-->
+    </header>
 
-                <div>
-                    <label for="medioDePago">Ingrese en el campo de abajo una de las siguientes opciones y verá el monto
-                        final con el descuento ya aplicado:
-                        <br>
+    <main>
+
+        <div id="myCarousel" class="carousel slide " data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
+            </div>
+
+
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="bd-placeholder-img" width="100%" height="100%" src="https://codigo200.files.wordpress.com/2017/11/mouse-click.png"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="#777" />
+                    </img>
+
+                    
+                </div>
+                <div class="carousel-item">
+                    <img class="bd-placeholder-img" width="100%" height="100%" src="https://h2m8x3y5.rocketcdn.me/wp-content/uploads/2020/05/que-es-dom-glosario-seo.png"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="#777" />
+                    </img>
+
+                   
+                </div>
+                <div class="carousel-item">
+                    <img class="bd-placeholder-img" width="100%" height="100%" src="https://androidayuda.com/app/uploads-androidayuda.com/2020/07/apertura-juegos-dados.jpg"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="#777" />
+                    </img>
+
+                    
+
+                    
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <!-- Marketing messaging and featurettes
+    ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container marketing">
+
+            <!-- 4 columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        src="https://cdn.pixabay.com/photo/2019/10/22/13/31/delivery-4568738_960_720.jpg" role="img" aria-label="Placeholder: 140x140"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#777" />
+                </img>
+
+                    <h2>Proyecto 1</h2>
+                    <p>Sistema de Facturación: Comenzando a usar JS creamos un pequeño sistema donde se le pide al
+                        usuario que ingrese información para luego hacerle el cálculo de descuento</p>
+                    <p><a class="btn btn-secondary" href="#proyecto1">VER</a></p>
+                </div><!-- /.col-lg-4 -->
+
+
+                <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    src="https://images.vexels.com/media/users/3/135811/isolated/preview/f3dc1094d770aadce0dff261623fddb6-icono-3d-de-dados-by-vexels.png" role="img" aria-label="Placeholder: 140x140"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#777" />
+                </img>
+
+                    <h2>Proyecto 2</h2>
+                    <p>Lanzamiento de dado: a través de una función recreo el juego del dado, utilizando el método
+                        ramdon</p>
+                    <p><a class="btn btn-secondary" href="#proyecto2">VER</a></p>
+                </div><!-- /.col-lg-4 -->
+
+
+                <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        src="https://sacavix.com/wp-content/uploads/2019/08/41whBKoYUEL._SX425_.jpg" role="img" aria-label="Placeholder: 140x140"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#777" />
+                </img>
+
+                    <h2>Proyecto 3</h2>
+                    <p>Contador de click: Es la recreación de un pequeño contador que se genera al hacer click en el
+                        botón</p>
+                    <p><a class="btn btn-secondary" href="#proyecto3">VER</a></p>
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Q1pnUncn2z3xQzG0X-OperGL_Qoiqopj2Q&usqp=CAU" role="img" aria-label="Placeholder: 140x140"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#777" />
+                </img>
+
+                    <h2>Proyecto 4</h2>
+                    <p>Manipulando el DOM a partir de un evento click</p>
+                    <p><a class="btn btn-secondary" href="#proyecto4">VER</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+
+            <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider">
+            <div class="row featurette" id="proyecto1">
+                <div class="col-md-7 d-flex ">
+                    <div class="col  d-flex flex-column position-static ">
+                        <h2 class="featurette-heading">Proyecto 1: Sistema de facturacion </h2>
+                        <label for="precio" class="text-primary text-center"><strong>Ingrese el precio del producto</strong></label><br>
+                        <input type="tex" name="precio" id="precio"><br>
+                        <strong class="d-inline-block mb-2 text-primary">
+                            <label for="medioDePago" class="text-center">Ingrese en el campo de
+                                abajo una de las siguientes opciones y verá el monto
+                                final con el descuento ya aplicado:</strong><br>
                         <ul>
                             <li>E: Si es pago en efectivo</li>
                             <li>D: Si es pago con tarjeta de débito</li>
                             <li>C: Si es pago con tarjeta de crédito</li>
-                        </ul>
-                    </label> <br>
-                    <input type="text" name="medioDePago" id="medioDePago" required>
+                        </ul></label>
+                        <input type="text" name="medioDePago" id="medioDePago" required><br>
+
+                        <button class=" btn-primary" onclick="facturacion()">Calcular</button><br>
+                        <div class="col-md-5 order-md-1 mx-auto">
+                            <p id="montoFinal" class="text-primary text-center">Ingrese la información en los campos de arriba y vera aquí el monto a
+                                abonar
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="btn">
-                    <button onclick="facturacion()">Calcular</button>
-                    <!-- <button onclick="borrar()">Borrar</button>-->
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette" id="proyecto2">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">Proyecto 2: Lanzamiento de dado </h2>
+                    
+                        <!--Creo el boton que va a funcionar con el js-->        
+                        <button class="boton mx-5 my-5" onclick="tirarDados()">Tira el dado</button>
+                        <!--Creo un parrafo para mostrar el numero que me da cada vez que hago click en button-->                 
                 </div>
-                <p id="montoFinal">Ingrese la información en los campos de arriba y vera aquí el monto a abonar</p>
+                <div class="col-md-5 order-md-1">
+                        <p id="demo" class="mx-5 my-5" width="100px"></p>
+                        <rect width="100%" height="100%" fill="#eee" />
+                    <p id="demo"></p>
+
+
+                </div>
             </div>
-        </div>
-    </section>
 
+            <hr class="featurette-divider">
 
-    <!-- Comienzo del juego del dado-->
-    <section id="proyecto2">
-        <div class="lanzamientoDado">
-            <h1>Proyecto 2: Lanzamiento de dado</h1>
-            <div>
-                <!--Creo el boton que va a funcionar con el js-->
+            <div class="row featurette" id="proyecto3">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Proyecto 3: Contador de click</span>
+                    </h2><br>
+                    <button class="mx-5" onclick="contadorDeClick()">Clickeame</button>
+                    
+                </div>
+                <div class="col-md-5 mx-auto" >
+                    <p id="demo2" class="text-center mx-auto">                    
+                        <rect width="100%" height="100%" fill="#eee"/>                    
+                </p>
 
-                <button class="boton" onclick="tirarDados()">Tira el dado</button>
-                <!--Creo un parrafo para mostrar el numero que me da cada vez que hago click en button-->
+                </div>
             </div>
-            <p id="demo"></p>
-        </div>
-    </section>
 
+            <hr class="featurette-divider">
 
-    <!-- Comienzo del Contador de clicks-->
-    <section id="proyecto3">
-        <div class="contadorClick">
-            <h1>Proyecto 3: Contador de click</h1>
-            <div>
-                <!--Paso1: Creo un boton que va a funcionar con el js-->
+            <div class="row featurette" id="proyecto4">
+                <div class="col-md-7 order-md-2 cambioColor">
+                    <h2 class="featurette-heading">Proyecto 4: Manipulando el DOM de un botón a partir de un evento</h2>
+                    <p class="lead">Al hacer click en el botón cambia el color del background y del texto del h1 y además del textp. A su vez al hacer hover sobre el mismo cambia de color</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <button id="botonColor" class="mt-3 bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" ><rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
+                            dy=".3em">Modo Nocturno: OFF</text>
+                    </button>
 
-                <button onclick="contadorDeClick()">Clickeame</button>
-                <p id="demo2"></p>
+                </div>
+
             </div>
-        </div>
-    </section>
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
+
+        <!-- FOOTER -->
+        <footer class="container">
+            <p class="float-end"><a href="#">Subir</a></p>
+            <p>&copy; 2021, Natacha Vergara</p>
+        </footer>
+    </main>
+
+
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="./js/javaScrip.js"></script>
+
+
+</body>
 
 
 
-
-    <!-- Comienzo de Cambiar color al boton-->
-    <!-- <section id="proyecto4"> -->
-    <!-- <h1 id="h1"> Proyecto 4: Manipulación del DOM</h1>
-
-        <h2>Paso 1: Obtener un elemento</h2>
-
-        <ul>
-            <li>document.querySelector('selector'): <span class="estilo-letras">Es uno de los métodos para obtener un
-                    elemento. Devuelve sólo el primer elemento que coincida con el selector CSS dado</span></li>
-            <li>document.querySelectorAll('selector'): <span class="estilo-letras">Obtiene un grupo de elementos.
-                    Devuelve un array con todos los elementos que coincidan con el selector CSS dado</span></li>
-            <li>document.getElementById(''): <span class="estilo-letras">obtiene un solo elemento unicamente a través de
-                    su ID</span></li>
-        </ul>
-
-        <h2>Paso 2: Manipular el elemento una vez obtenido:</h2>
-
-        <ul>
-            <li>CSS: <span class="estilo-letras">elemento.style.propiedadCss</span></li>
-            <li>HTML: <span class="estilo-letras">elemento.textContent</span></li>
-            <li>HTML: <span class="estilo-letras">elemento.innerHTML</span></li>
-        </ul>
-
-        <h2>Manipulación de DOM a través de un evento - Intro:</h2>
-
-        <p id="primerParrafo">Tambien se puede manipular un elemento a través de un evento. Repasemos antes... Un evento
-            es la interacción del usuario con nuestra página Web. Esta interacción activa una función.</p>
-
-        <p>Uno de los eventos más utilizados es el evento click. La estrucutra sintaxica para un evento es el siguiente
-        </p>
-
-        <p><strong>elemento.addEventListener("evento",funcion a ejecutar)</strong></p> -->
-
-
-    <!-- </section> -->
-
-
-
-
-    <!-- Comienzo de Cambiar color al boton-->
-    <section id="proyecto4">
-        <div class="cambioColor">
-            <h1> Proyecto 4: Manipulando el DOM de un botón a partir de un evento</h1>
-            <!--Paso1: Creo un boton que va a funcionar con el js-->
-            <button id="botonColor" class="mt-3">Modo Nocturno: OFF</button>
-
-
-        </div>
-    </section>
+<body>
 
 
 
@@ -182,25 +324,18 @@
 
 
 
-    <!--Comienzo del footer-->
-
-    <footer class="footer mt-auto py-3 bg-dark">
-        <div class="container d-flex justify-content-between">
-            <span>Diseñado por Natacha Vergara &copy; 2021</span>
 
 
-            <a class="text-mute" href="#">Subir</a>
 
 
-        </div>
 
-    </footer>
 
     <script src="./js/javaScrip.js"></script>
     <script src="./js/fondoNegro.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
+
 
 
 </body>
