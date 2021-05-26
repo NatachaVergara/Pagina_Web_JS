@@ -37,6 +37,26 @@ ul{
     border-radius: 10%;
 }
 
+.contador{
+    width: 200px;
+    font-size: 10rem;
+}
+#botonColor, .boton{
+    width:auto;
+    margin-left: 70px;
+    border-radius: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 700px)
 {
@@ -63,6 +83,9 @@ input{
     margin-left: 30px;
     border-radius: 10%;
 }
+#botonColor{
+    margin-left: 50px;
+}
 }
 
 
@@ -73,4 +96,5 @@ input{
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
     }
+   
 }
